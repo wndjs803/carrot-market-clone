@@ -21,7 +21,7 @@ export default function ListProducts({
   return (
     <Link href={`/products/${id}`} className="flex gap-5">
       <div className="relative size-28 rounded-md overflow-hidden">
-        <Image fill src={photo} alt={title} />
+        <Image className="object-cover" fill src={photo} alt={title} />
       </div>
       <div className="flex flex-col gpa-1 *:text-white">
         <span className="text-lg">{title}</span>
