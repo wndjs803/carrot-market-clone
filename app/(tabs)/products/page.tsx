@@ -28,6 +28,9 @@ export type InitialProducts = Prisma.PromiseReturnType<
   typeof getInitialProducts
 >;
 
+// export const dynamic = "force-dynamic";
+export const revalidate = 60;
+
 export default async function Proudct() {
   const initialProducts = await getCachedProducts();
   console.log("hit");
